@@ -6,8 +6,9 @@ ocrTargetPath:
 			${LIST_PATH}="${ocrViewerTxtListFilePath}"
 			?${LIMIT_NUM}=10
 		|
-			initialPath=`${STORAGE}/Downloads`
+			initialPath=`${STORAGE}/Download`
 			?suffix=`${TXT_SUFFIX}&${PDF_SUFFIX}`
+			?macro=FROM_RECENT_DIR
 		,
 EXEC_EXTRACT:
 	BTN:HL=
